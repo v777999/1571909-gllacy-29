@@ -1,0 +1,231 @@
+/* Fonts */
+@font-face {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 500;
+	src: url("/fonts/roboto.woff2") format("woff2"), url("/fonts/roboto.woff") format("woff");
+}
+
+@font-face {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: bold;
+	src: url("/fonts/robotobold.woff2") format("woff2"), url("/fonts/robotobold.woff") format("woff");
+}
+
+/* Variables */
+
+:root {
+	--basic-text-light: #ffffff;
+	--basic-text-dark: #323232;
+	--basic-background: transparent;
+	--basic-bg-index1: #849D8F;
+	--basic-bg-index2: #8996A6;
+	--basic-bg-index3: #9D8B84;
+	--basic-bg-light: #ffffff;
+	--basic-submenu-bg-hover: #FBDED7; 
+	--basic-submenu-bg-focus: #F6B5A5;
+	--basic-submenu-bg-active: #D07058;
+	--basic-subscribe-text: #5A5A5A;
+}
+
+/* Global */
+
+body {
+	min-width: 1200px;
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 500;
+	color: var(--basic-text-light);
+	background-color: var(--basic-bg-index1);
+}
+
+.page a {
+	color: var(--basic-text-light);
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.dark-text {
+	color: var(--basic-text-dark);
+}
+
+.light-text {
+	color: var(--basic-text-light);
+}
+
+/* Site Navigation */
+
+.main-navigation {
+	font-size: 16px;
+	line-height: 18px;
+	color: var(--basic-text-light);
+	background-color: var(--basic-background);
+}
+
+.site-navigation, .submenu, .slider-list, .hits-list, .features-list , .footer-social-list , .footer-information-navigation {
+	list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+	color: var(--basic-text-light);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+	background-color: var(--basic-bg-light);
+	color: var(--basic-text-dark);
+	border-radius: 26px;
+}
+
+.submenu a:hover {
+	background-color: var(--basic-submenu-bg-hover);
+	color: var(--basic-text-dark);
+	border-radius: 0px;
+}
+
+.submenu a:focus {
+	background-color: var(--basic-submenu-bg-focus);
+	color: var(--basic-text-dark);
+	border-radius: 0px;
+}
+
+.submenu a:active {
+	background-color: var(--basic-submenu-bg-active);
+	color: var(--basic-text-light);
+	border-radius: 0px;
+}
+
+.search-link, .login-link {
+	font-size: 14px;
+	line-height: 16px;
+}
+
+/* Slider */
+
+.slider-item h3 {
+	font-size: 60px;
+	line-height: 60px;
+	font-weight: bold;
+	color: var(--basic-text-light);
+	background-color: var(--basic-background);
+	text-align: center;
+}
+
+/* Button */
+
+.button-slider, .button {
+	text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
+	background: linear-gradient(180deg, #F26843 0%, #E74A35 100%);
+	box-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64);
+	border-radius: 70px;
+	text-align: center;
+}
+
+.button-slider {
+	font-size: 32px;
+	line-height: 44px;
+}
+
+.button {
+	font-size: 18px;
+	line-height: 24px;
+	color: var(--basic-text-light);
+}
+
+.hits-item {
+	text-align: center;
+}
+
+.price {
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: bold;
+}
+
+page .span {
+	font-size: 30px;
+	line-height: 35px;
+}
+
+/* Features */
+/*
+.features {
+	background-image: url("/img/Вафля_паттерн_2.jpg");
+	border-radius: 16px;
+}*/
+
+.feature-item h3 {
+	font-size: 24px;
+	line-height: 30px;
+}
+.feature-item {
+	color: var(--basic-text-dark);
+}
+
+/* Banner */
+
+.news {
+	color: var(--basic-text-dark);
+/*	background-image: url("/img/Клубничный_фон.jpg");
+	background-repeat: no-repeat;
+	border-radius: 16px;*/
+}
+
+.news a {
+	font-size: 24px;
+	line-height: 30px;
+	color: var(--basic-text-dark);
+	text-decoration: underline;
+}
+
+.subscribe p {
+	color: var(--basic-subscribe-text);
+}
+
+/* Map & Contacts */
+
+.address-description {
+	font-size: 14px;
+	line-height: 20px;
+	color: var(--basic-text-dark);
+	background-color: var(--basic-background);
+}
+
+.address-data {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: bold;
+	color: var(--basic-text-dark);
+	background-color: var(--basic-background);
+}
+
+/* Footer */
+
+.main-footer {
+	color: var(--basic-text-light);
+	background-color: var(--basic-background);
+}
+
+.footer-information-navigation a {
+	font-size: 13px;
+	line-height: 18px;
+	font-weight: normal;
+	text-decoration: underline;
+}
+
+.footer-copyright a {
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: normal;
+}
