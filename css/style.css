@@ -202,7 +202,7 @@ page .span {
 	background-color: var(--basic-background);
 }
 
-.address-data {
+.address-data, .contacts a {
 	font-size: 18px;
 	line-height: 24px;
 	font-weight: bold;
