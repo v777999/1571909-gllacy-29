@@ -15,7 +15,7 @@
 			<header class="main-header">
 				<nav class="main-header-container">
 					<a class="main-header-logo">
-						<img src="img/Лого.svg" width="154" height="64" alt="Логотип магазина «Глейси»">
+						<img src="img/logo.svg" width="154" height="64" alt="Логотип магазина «Глейси»">
 					</a>
 					<ul class="site-navigation">
 						<li><a href="catalog.html">Каталог</a>
@@ -30,11 +30,18 @@
 						<li><a href="blank.html">Доставка и оплата</a></li>
 						<li><a href="blank.html">О компании</a></li>
 					</ul>
-					<div class="user-navigation">
-						<a class="search-link" href="#">Поиск</a>
-						<a class="login-link" href="blank.html">Вход</a>
-						<a class="basket-link" href="blank.html">Пусто</a>
-					</div>
+					<ul class="user-navigation">
+						<li>
+							<a class="search-link" href="#">
+								<span class="visually-hidden">Поиск</span></a>
+						</li>
+						<li>
+							<a class="login-link" href="blank.html">Вход</a>
+						</li>
+						<li>
+							<a class="basket-link-empty" href="blank.html">Пусто</a>
+						</li>
+					</ul>
 				</nav>
 				<div class="contact-info">
 					<p>с 10 до 20, ежедневно</p>
@@ -51,7 +58,7 @@
 					<ul class="slider-list">
 						<li class="slider-item slide slide-current">
 							<h3 class="slide-title">Крем-брюле и пломбир с малиновым джемом</h3>
-							<a class="button slide-button" href="#">Давайте оба!</a>
+							<a class="button  slide-button" href="#">Давайте оба!</a>
 						</li>
 						<li class="slider-item slide">
 							<h3 class="slide-title">Шоколадный пломбир и лимонный сорбет</h3>
@@ -90,29 +97,29 @@
 					<section class="hits">
 						<ul class="hits-list">
 							<li class="hits-item">
-								<img class="hit" src="img/Hit.png" width="61" height="61" alt="Хит">
-								<img src="img/Сливочное.png" width="267" height="267"
+								<img class="hit" src="img/hit-label.png" width="61" height="61" alt="Хит">
+								<img src="img/creamy.png" width="267" height="267"
 									alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
 								<h3 class="price">310 ₽<span>/кг</span></h3>
 								<p class="hits-description"> Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
 							</li>
 							<li class="hits-item">
-								<img class="hit" src="img/Hit.png" width="61" height="61" alt="Хит">
-								<img src="img/Сливочно-кофейное.png" width="267" height="267"
+								<img class="hit" src="img/hit-label.png" width="61" height="61" alt="Хит">
+								<img src="img/creamy-coffee.png" width="267" height="267"
 									alt="Сливочно-кофейное с кусочками шоколада">
 								<h3 class="price">380 ₽<span>/кг</span></h3>
 								<p class="hits-description">Сливочно-кофейное с кусочками шоколада</p>
 							</li>
 							<li class="hits-item">
-								<img class="hit" src="img/Hit.png" width="61" height="61" alt="Хит">
-								<img src="img/Сливочно-клубничное.png" width="267" height="267"
+								<img class="hit" src="img/hit-label.png" width="61" height="61" alt="Хит">
+								<img src="img/creamy-strawberry.png" width="267" height="267"
 									alt="Сливочно-клубничное с присыпкой из белого шоколада">
 								<h3 class="price">355 ₽<span>/кг</span></h3>
 								<p class="hits-description">Сливочно-клубничное с присыпкой из белого шоколада</p>
 							</li>
 							<li class="hits-item">
-								<img class="hit" src="img/Hit.png" width="61" height="61" alt="Хит">
-								<img src="img/Сливочное_крем-брюле.png" width="267" height="267"
+								<img class="hit" src="img/hit-label.png" width="61" height="61" alt="Хит">
+								<img src="img/creamy-cream-brulee.png" width="267" height="267"
 									alt="Сливочное крем-брюле с карамельной подливкой">
 								<h3 class="price">415 ₽<span>/кг</span></h3>
 								<p class="hits-description">Сливочное крем-брюле с карамельной подливкой</p>
@@ -159,20 +166,24 @@
 						<!--Здесь будет форма подписки-->
 					</section>
 				</div>
-				
 			</main>
 		</div>
 	</div>
 	<section class="contacts">
 		<h2 class="visually-hidden">Контактная информация</h2>
-		<div class="contacts-container">
-			<div class="contacts-info">
-				<p class="address-description">Адрес главного офиса и офлайн-магазина:</p>
-				<p class="address-data">ул. Большая Конюшенная, 19/8, Санкт-Петербург</p>
-				<p class="address-description">Для заказов по телефону:</p>
+		<a class="pin">
+			<img src="img/map-pin.png" width="80" height="140" alt="Положение на карте">
+		</a>
+		<div class="contacts-info">
+			<p class="address-description">Адрес главного офиса<br> и офлайн-магазина:</p>
+			<p class="address-data">ул. Большая Конюшенная, 19/8, Санкт-Петербург</p>
+			<p class="address-description-phone">Для заказов по телефону:</p>
+			<div class="contacts-phone">
 				<a href="tel:88124502525">8 812 450-25-25</a>
-				<p class="address-description">(с 10 до 20 ежедневно)</p>
-				<a class="button" href="blank.html">Форма обратной связи</a>
+			</div>
+			<p class="address-description">(с 10 до 20 ежедневно)</p>
+			<div class="contacts-button">
+				<a href="blank.html">Форма обратной связи</a>
 			</div>
 		</div>
 	</section>
@@ -214,7 +225,7 @@
 			</section>
 			<section class="footer-copyright">
 				<h2 class="visually-hidden">Сделано в Академии</h2>
-				<a href="https://htmlacademy.ru/intensive/htmlcss">Сделано в HTML Academy © 2019<img src="img/Лого_академии.png"
+				<a href="https://htmlacademy.ru/intensive/htmlcss">Сделано в HTML Academy © 2019<img src="img/logo-academy.png"
 						width="108" height="39" alt="Логотип Академии"></a>
 			</section>
 		</div>
