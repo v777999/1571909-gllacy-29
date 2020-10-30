@@ -1655,7 +1655,6 @@ img {
   opacity: 1;
 }
 
-
 .filters-range {
   width: 218px;
   height: 36px;
@@ -1766,6 +1765,13 @@ img {
 .filters-radio:disabled + .filters-label::before,
 .filters-checkbox:disabled + .filters-label::before {
   opacity: 0.4;
+}
+
+.filters__radio:focus + .filters__label::before,
+.filters__checkbox:focus + .filters__label::before {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2pх;
 }
 
 .filters-label-fat:last-child {
