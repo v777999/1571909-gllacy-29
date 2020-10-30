@@ -1767,8 +1767,8 @@ img {
   opacity: 0.4;
 }
 
-.filters__radio:focus + .filters__label::before,
-.filters__checkbox:focus + .filters__label::before {
+.filters-radio:focus + .filters-label::before,
+.filters-checkbox:focus + .filters-label::before {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2pх;
