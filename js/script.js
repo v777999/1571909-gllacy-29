@@ -1,15 +1,15 @@
-const feedbackButton = document.querySelector(".contact-info-button");
-const feedbackPopup = document.querySelector(".feedback");
-const feedbackClose = feedbackPopup.querySelector(".feedback-close");
-const page = document.querySelector(".page-body");
-const feedbackName = feedbackPopup.querySelector(".feedback-input-name");
-const feedbackEmail = feedbackPopup.querySelector(".feedback-input-email");
-const feedbackMessage = feedbackPopup.querySelector(".feedback-message");
-const feedbackForm = feedbackPopup.querySelector(".feedback-form");
+var feedbackButton = document.querySelector(".contact-info-button");
+var feedbackPopup = document.querySelector(".feedback");
+var feedbackClose = feedbackPopup.querySelector(".feedback-close");
+var page = document.querySelector(".page-body");
+var feedbackName = feedbackPopup.querySelector(".feedback-input-name");
+var feedbackEmail = feedbackPopup.querySelector(".feedback-input-email");
+var feedbackMessage = feedbackPopup.querySelector(".feedback-message");
+var feedbackForm = feedbackPopup.querySelector(".feedback-form");
 
-let isStorageSupport = true;
-const nameStorage = "";
-const emailStorage = "";
+var isStorageSupport = true;
+var nameStorage = "";
+var emailStorage = "";
 
 try {
   nameStorage = localStorage.getItem("name");
@@ -69,8 +69,8 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
-const sliderItems = document.querySelectorAll(".slider-item");
-const sliderButtons = document.querySelectorAll(".slider-button");
+var sliderItems = document.querySelectorAll(".slider-item");
+var sliderButtons = document.querySelectorAll(".slider-button");
 
 sliderButtons[0].addEventListener("click", function (evt) {
   evt.preventDefault();
