@@ -205,11 +205,11 @@ img {
 }
 
 .site-navigation-link {
-  padding-top: 5px;
+  padding-top: 4px;
   padding-bottom: 7px;
-  padding-right: 14px;
-  padding-left: 15px;
-  margin-right: 4px;
+  padding-right: 15px;
+  padding-left: 14px;
+  margin-right: 3px;
   color: var(--light-text);
   font-weight: bold;
   line-height: 18px;
@@ -218,7 +218,8 @@ img {
 }
 
 .site-navigation-link:last-child {
-  margin-right: 0;
+	margin-right: 0;
+	margin-left: 1px;
 }
 
 .site-navigation-link-current {
@@ -311,9 +312,9 @@ img {
 
 .user-navigation {
   display: flex;
-  flex-wrap: wrap;
-  margin-left: auto;
-  padding-top: 19px;
+	flex-wrap: wrap;
+	margin-left: auto;
+	padding-top: 19px;
 }
 
 .user-navigation-search-wrapper {
@@ -329,13 +330,13 @@ img {
   padding: 20px 15px;
 }
 
-
 .user-navigation-search-button:hover + .user-navigation-search-form,
 .user-navigation-search-button:focus + .user-navigation-search-form,
-.user-navigation-search-wrapper:focus-within .user-navigation-search-form {
-  display: block;
+.user-navigation-search-wrapper:focus-within .user-navigation-search-form,
+.user-navigation-search-wrapper:hover .user-navigation-search-form {
+	display: block;
+	z-index: 2;
 }
-
 
 .user-navigation-input {
   width: 311px;
@@ -360,7 +361,7 @@ img {
 
 .user-navigation-search-button:hover,
 .user-navigation-search-button:focus {
-  background-color: var(--basic-white);
+	background-color: var(--basic-white);
 }
 
 .user-navigation-search-button:hover .user-navigation-search-icon,
@@ -734,8 +735,9 @@ img {
   column-gap: 26px;
   row-gap: 24px;
   margin: 0;
-  padding: 0;
-  margin-bottom: 27px;
+	padding: 0;
+	padding-bottom: 21px;
+  margin-bottom: 7px;
   list-style: none;
 }
 
@@ -777,7 +779,7 @@ img {
   display: none;
   width: 293px;
 	/*height: 402px;*/
-	min-height: calc(100% + 80px);
+	min-height: calc(100% + 70px);
 	margin-top: -6px;
   margin-left: -13px;
   background: var(--basic-white);
@@ -792,7 +794,7 @@ img {
 }
 
 .product-card-price {
-  margin-top: -66px;
+  margin-top: -65px;
   margin-bottom: 25px;
   font-weight: bold;
   font-size: 45px;
@@ -803,13 +805,13 @@ img {
 
 .product-card-units {
   font-size: 30px;
-  line-height: 35px;
+	line-height: 35px;
+	text-shadow: 0px 1px 3px var(--text-shadow-price);
 }
 
 .link {
   color: var(--basic-white);
 	text-decoration-color: var(--link-normal-underline);
-	
 }
 
 .link:hover,
@@ -835,19 +837,21 @@ img {
 }
 
 .product-card-link {
+	margin-top: -1px;
   font-size: 16px;
-  line-height: 22px;
-  font-weight: 500;
+	line-height: 22px;
+  
 }
 
 .product-card-quick-view {
   position: absolute;
-  left: 50%;
+	left: 50%;
+	bottom: -45px;
   display: none;
   padding: 10px 16px;
   width: 200px;
 	margin-left: -100px;
-	margin-bottom: 21px;
+	margin-bottom: 0;
   box-sizing: border-box;
   font-weight: bold;
   font-size: 18px; 
@@ -930,7 +934,7 @@ img {
 .article {
 	padding-top: 19px;
   padding-right: 253px;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
   padding-left: 20px;
   color: var(--dark-text);
 	background-image: url(../img/background-strawberry.jpg);
@@ -950,6 +954,7 @@ img {
 
 .article-title {
 	margin: 0;
+	margin-top: -2px;
 }
 
 .article-link {
@@ -998,7 +1003,8 @@ img {
 }
 
 .subscription-input {
-  padding: 10px 14px;
+	padding: 10px 14px;
+	margin-top: 0px;
   font-size: 16px;
   line-height: 24px;
   flex-grow: 1;
@@ -1006,7 +1012,7 @@ img {
 
 .subscription-button {
   margin-left: 10px;
-  padding: 9px 19px;
+  padding: 8px 19px 9px;
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
@@ -1018,7 +1024,8 @@ img {
 
 .contact-info {
   position: relative;
-  margin-top: 40px;
+	margin-top: 40px;
+	margin-bottom: -2px;
 }
 
 .contact-info-map {
@@ -1072,9 +1079,13 @@ img {
 }
 
 .contact-info-button {
-  padding: 10px 27px;
-  margin-top: 26px;
-  width: 100%;
+	display: block;
+	margin: 0;
+	margin-top: 28px;
+	padding: 0;
+  padding: 9px 27px 10px;
+	width: 253px;
+	box-sizing: border-box;
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
@@ -1086,8 +1097,8 @@ img {
 
 .main-footer {
   display: grid;
-  grid-template-columns: max-content 1fr max-content;
-	padding: 18px 0;
+  grid-template-columns: max-content 1fr 190px;
+	padding-top: 19px;
 	border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -1157,11 +1168,8 @@ img {
 /* Footer navigation */
 
 .main-footer-nav-link {
-  font-size: 13px;
+	font-size: 13px;
   line-height: 18px;
-}
-
-.main-footer-nav-link {
   padding-left: 25px;
 }
 
@@ -1195,9 +1203,8 @@ img {
 /* Footer copyright */
 
 .copyright-text {
-  margin-top: -2px;
+  margin-top: 0px;
 	margin-bottom: 3px;
-	margin-left: 1px;
   font-size: 12px;
   line-height: 18px;
 }
@@ -1206,8 +1213,8 @@ img {
 
 .feedback {
   position: fixed;
-  top: 338px;
-  left: 50%;
+	top: 338px;
+	left: 50%;
   z-index: 200;
   margin-left: -239px;
   padding-top: 14px;
@@ -1419,7 +1426,7 @@ img {
 .breadcrumbs {
   position: relative;
   z-index: 1;
-  margin-top: -30px;
+	margin-top: -30px;
   max-width: 950px;
 }
 
@@ -1464,8 +1471,9 @@ img {
 }
 
 .main-title {
-  margin: 0;
-  margin-bottom: 26px;
+	margin: 0;
+	margin-top: -2px;
+  margin-bottom: 29px;
   font-weight: bold;
   font-size: 35px;
   line-height: 41px;
@@ -1478,8 +1486,8 @@ img {
 /* Pagination */
 
 .pagination {
-  margin-top: 64px;
-  margin-bottom: 30px;
+  margin-top: 44px;
+  margin-bottom: 29px;
   margin-right: -9px;
 }
 
@@ -1559,9 +1567,10 @@ img {
 }
 
 .filters-caption {
-  margin: 0;
+	margin: 0;
+	margin-top: -1px;
   margin-bottom: 7px;
-  padding-left: 16px;
+  padding-left: 13px;
   font-size: 14px;
   line-height: 16px;
 }
@@ -1616,7 +1625,9 @@ img {
 
 .filters-select {
   color: var(--basic-white);
-  font-weight: 500;
+	font-weight: 500;
+	margin-top: -1px;
+	margin-left: -2px;
 }
 
 .filters-select:hover {
@@ -1631,10 +1642,10 @@ img {
   color: var(--dark-text);
 }
 
-
 .filters-price-wrapper {
   display: flex;
-  align-items: top;
+	align-items: top;
+	margin-left: 5px;
 }
 
 .filters-price {
@@ -1649,10 +1660,10 @@ img {
 }
 
 .filters-price-units {
-  padding-top: 1px;
+	text-decoration: none;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+	line-height: 16px;
 }
 
 .filters-price::placeholder {
@@ -1668,7 +1679,7 @@ img {
 
 .filters-controls {
   position: relative;
-  padding-top: 16px;
+  padding-top: 15px;
   padding-left: 21px;
   padding-right: 21px;
 }
@@ -1687,7 +1698,7 @@ img {
 
 .filters-toggle {
   position: absolute;
-  top: 7px;
+  top: 6px;
   left: 0;
   width: 4px;
   height: 4px;
@@ -1727,21 +1738,21 @@ img {
 
 .filters-container-additives {
  padding-right: 21px;
- padding-top: 10px;
+ padding-top: 12px;
  padding-bottom: 9px;
- padding-left: 16px;
+ padding-left: 14px;
 }
 
 .filters-container-fat {
-  padding-top: 9px;
+  padding-top: 8px;
   padding-right: 17px;
   padding-bottom: 9px;
-  padding-left: 14px;
+  padding-left: 15px;
  }
 
 .filters-label-fat {
   padding-left: 33px;
-  margin-right: 19px;
+  margin-right: 20px;
 }
 
 .filters-label-fat::before {
@@ -1779,10 +1790,11 @@ img {
 }
 
 .filters-label-fat:last-child {
-  margin-right: 0;
+  margin: 0;
 }
 
 .filters-label-additives {
+	margin-top: -2px;
   padding-left: 30px;
   margin-right: 23px;
 }
@@ -1792,8 +1804,9 @@ img {
 }
 
 .filters-label-additives-fruits {
-  padding-left: 32px;
-  margin-right: 27px;
+	padding-left: 35px;
+	margin-top: -1px;
+  margin-right: 28px;
 }
 
 .filters-label-additives::before {
@@ -1815,8 +1828,8 @@ img {
 }
 
 .filters-button {
-  padding: 7px 29px;
-  margin-left: 2px;
+  padding: 7px 28px;
+  margin-left: 5px;
   min-width: 144px;
   height: 36px;
   align-self: flex-end;
