@@ -622,7 +622,8 @@ img {
   text-decoration: none;
   background: var(--button-normal-background);
   box-shadow: 0 2px 2px var(--button-normal-shadow);
-  border: none;
+	border: none;
+	cursor: pointer;
 }
 
 .button:hover,
