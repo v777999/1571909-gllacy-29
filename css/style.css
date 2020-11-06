@@ -780,7 +780,7 @@ img {
   display: none;
   width: 293px;
 	/*height: 402px;*/
-	min-height: calc(100% + 70px);
+	min-height: calc(100% + 80px);
 	margin-top: -6px;
   margin-left: -13px;
   background: var(--basic-white);
@@ -795,7 +795,7 @@ img {
 }
 
 .product-card-price {
-  margin-top: -65px;
+  margin-top: -66px;
   margin-bottom: 25px;
   font-weight: bold;
   font-size: 45px;
@@ -841,24 +841,22 @@ img {
 	margin-top: -1px;
   font-size: 16px;
 	line-height: 22px;
-  
+  margin bottom: 21px;
 }
 
 .product-card-quick-view {
-  position: absolute;
+	position: absolute;
 	left: 50%;
-	bottom: -45px;
   display: none;
   padding: 10px 16px;
   width: 200px;
 	margin-left: -100px;
-	margin-bottom: 0;
-  box-sizing: border-box;
+	box-sizing: border-box;
   font-weight: bold;
   font-size: 18px; 
   line-height: 24px;
 	border-radius: 50px;
-	
+	z-index: 2;
 }
 
 .product-card:hover .product-card-quick-view,
@@ -871,7 +869,7 @@ img {
 .features {
   position: relative;
   margin-bottom: 39px;
-  padding-top: 23px;
+  padding-top: 25px;
   padding-right: 27px;
   padding-bottom: 30px;
   padding-left: 20px;
@@ -995,7 +993,7 @@ img {
 
 .subscription-text {
   margin-top: 0;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
 }
 
 .subscription-form {
@@ -1214,7 +1212,8 @@ img {
 
 .feedback {
   position: fixed;
-	top: 338px;
+	/*top: 338px;*/
+	top: 25%;
 	left: 50%;
   z-index: 200;
   margin-left: -239px;
