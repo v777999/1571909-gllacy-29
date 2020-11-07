@@ -191,6 +191,7 @@ img {
 }
 
 .site-navigation-list {
+	width: 700px;
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -536,7 +537,7 @@ img {
 
 .main-header-contacts {
 	position: relative;
-  z-index: 1;
+	z-index: 1;
   text-align: right;
 }
 
@@ -795,7 +796,7 @@ img {
 }
 
 .product-card-price {
-  margin-top: -66px;
+  margin-top: -67px;
   margin-bottom: 25px;
   font-weight: bold;
   font-size: 45px;
@@ -833,15 +834,13 @@ img {
 }
 
 .product-card-title {
-  margin-bottom: 10px;
+	margin-bottom: 15px;
   padding: 0 5px;
 }
 
 .product-card-link {
-	margin-top: -1px;
   font-size: 16px;
-	line-height: 22px;
-  margin bottom: 21px;
+	line-height: 16px;
 }
 
 .product-card-quick-view {
@@ -1098,25 +1097,28 @@ img {
   display: grid;
   grid-template-columns: max-content 1fr 190px;
 	padding-top: 19px;
+	padding-bottom: 25px;
 	border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 /* Social list */
 
 .socials-list {
+	width: 164px;
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  margin-top: 15px;
-  padding: 0;
+	margin-top: 15px;
+	padding: 0;
   list-style: none;
 }
 
 .socials-item {
-  margin-right: 12px;
+	margin-right: 12px;
+	margin-bottom: 15px;
 }
 
-.socials-item:last-child {
+.socials-item:nth-child(4n) {
   margin-right: 0;
 }
 
@@ -1167,6 +1169,8 @@ img {
 /* Footer navigation */
 
 .main-footer-nav-link {
+	margin: 0;
+	padding: 0;
 	font-size: 13px;
   line-height: 18px;
   padding-left: 25px;
@@ -1183,26 +1187,29 @@ img {
 }
 
 .main-footer-nav-list {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: center;
-  height: 50px;
-  padding: 0;
-	margin-top: 11px;
-	margin-left: -4px;
-  margin-bottom: 0;
+	width: 350px;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	margin-top: 12px;
+	margin-left: 228px;
   list-style: none;
 }
 
 .main-footer-nav-item {
-  margin-left: 6px;
+	margin: 0;
+	padding: 0;
+  margin-left: 5px;
+}
+
+.main-footer-nav-item:nth-child(4n) {
+	margin-left: 19px;
 }
 
 /* Footer copyright */
 
 .copyright-text {
-  margin-top: 0px;
+  margin-top: -1px;
 	margin-bottom: 3px;
   font-size: 12px;
   line-height: 18px;
@@ -1486,7 +1493,7 @@ img {
 /* Pagination */
 
 .pagination {
-  margin-top: 44px;
+  margin-top: 42px;
   margin-bottom: 29px;
   margin-right: -9px;
 }
